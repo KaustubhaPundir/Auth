@@ -23,13 +23,13 @@ app.use(redirectToLogin);
 
 
 app.get("/login", (req, res, next) => {
-    res.sendFile(path.join(__root, 'node-express-vercel-master', 'views', 'login.html'));
+    res.sendFile(path.join(__root, 'src', 'views', 'login.html'));
 });
 app.get("/register", (req, res, next) => {
-    res.sendFile(path.join(__root, 'node-express-vercel-master', 'views', 'register.html'));
+    res.sendFile(path.join(__root, 'src', 'views', 'register.html'));
 });
 app.get("/forget", (req, res, next) => {
-    res.sendFile(path.join(__root, 'node-express-vercel-master', 'views', 'forgetpass.html'));
+    res.sendFile(path.join(__root, 'src', 'views', 'forgetpass.html'));
 });
 
 
